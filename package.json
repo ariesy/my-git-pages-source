@@ -1,7 +1,7 @@
 {
-  "name": "reactjs-boilerplate",
-  "version": "2.4.0",
-  "description": "Quick setup for new React.js applications featuring Redux, hot–reloading, PostCSS, react-router and Mocha.",
+  "name": "ariesy.github.io",
+  "version": "0.1.0",
+  "description": "My github pages.",
   "dependencies": {
     "fontfaceobserver": "^1.5.1",
     "history": "1.17.0",
@@ -54,7 +54,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mxstbr/react-boilerplate.git"
+    "url": "https://github.com/ariesy/my-git-pages-source/"
   },
   "scripts": {
     "lint": "eslint .",
@@ -62,8 +62,9 @@
     "test:watch": "npm test -- --watch",
     "start": "cross-env NODE_ENV=development node server.dev.js",
     "build": "npm run test && cross-env NODE_ENV=production webpack --config webpack.prod.config.js --progress --colors -p",
+    "build:navigation":"cross-env NODE_ENV=production webpack --config makewebpacknavigationconfig.js --progress --colors -p",
     "serve": "cross-env NODE_ENV=production node server.prod.js"
   },
-  "author": "Max Stoiber",
+  "author": "Sirius",
   "license": "MIT"
 }
