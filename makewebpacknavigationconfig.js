@@ -7,8 +7,11 @@ module.exports = {
         filename: "js/navigation.bundle.js"
     },
     module: {
-        loaders: [
-            { test: /\.css$/, loader: "style!css" }
+        loaders: [{
+          test: /navigation\\*\.js$/, // Transform all .js files required somewhere within an entry point...
+          loader: 'babel', // ...with the specified loaders...
+          exclude: path.join(__dirname, '/node_modules/') // ...except for the node_modules folder.
+        }
         ]
     },
     plugins:[
