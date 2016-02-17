@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "My github pages.",
   "dependencies": {
+    "bootstrap": "^3.3.6",
     "fontfaceobserver": "^1.5.1",
     "history": "1.17.0",
     "react": "^0.14.2",
@@ -62,8 +63,10 @@
     "test": "mocha --compilers js:babel-core/register --recursive",
     "test:watch": "npm test -- --watch",
     "start": "cross-env NODE_ENV=development node server.dev.js",
+    "start:navigation": "cross-env NODE_ENV=development node server.navigation.dev.js",
     "build": "npm run test && cross-env NODE_ENV=production webpack --config webpack.prod.config.js --progress --colors -p",
-    "build:navigation": "cross-env NODE_ENV=production webpack --config makewebpacknavigationconfig.js --progress --colors -p",
+    "build:dev": "cross-env NODE_ENV=development webpack --config webpack.dev.config.js --progress --colors -p",
+    "build:navigation": "cross-env NODE_ENV=development webpack --config makewebpacknavigationconfig.js --progress --colors -p",
     "serve": "cross-env NODE_ENV=production node server.prod.js"
   },
   "author": "Sirius",

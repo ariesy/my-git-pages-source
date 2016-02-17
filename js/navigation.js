@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import '../css/main.css';
 ReactDOM.render(
 	<div>
 	<a href="http://hao.qq.com">上网导航</a>
